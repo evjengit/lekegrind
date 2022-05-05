@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <title>HTML Nivå 2</title>
+    </head>
+    <body>
+        <!-- OPPGAVE 1: Lag en overskrift med tittelen "Mitt filmarkiv- og seriearkiv" inne i <header>-taggen. -->
+        <header>
+
+        </header>
+        <!-- TEORI: Semantiske tagger er beskrivende tagger som gjør innholdet mer forståelig, som for eksempel main.
+        Det kan kun være en main i dokumentet og alt hovedinnhold skal ligge inne i main. 
+        Det som kan ligge utenfor er for eksempel <header>, <footer> eller <aside>. -->
+        <main>
+            <div id="filmer">
+                <h2>Filmer</h2>
+
+                <!-- OPPGAVE 2: List opp noen filmer i en <ul>. Hint: https://www.w3schools.com/html/html_lists.asp -->
+                <ul>
+                </ul>
+
+                <!-- OPPGAVE 3: Fyll ut de tomme taggene utenfor <tr> for å lage en tabell. -->
+                <>
+                    <tr>
+                        <!-- TEORI: Den første raden i en tabell inneholder table headers for å gi kolonnene overskrifter. 
+                            OPPGAVE 4: Legg til to overskrifter, for "sjanger" og "utgivelsesår". -->
+                        <th>Filmtittel</th>
+
+
+                    </tr>
+                    <tr>
+                        <!-- TEORI: <td> blir brukt for å beskrive cellene i tabellen. Hver celle er knyttet til
+                            table header i samme kolonne. -->
+                        <td>Verdens verste menneske</td>
+                        <td>Romantikk/Drama</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <!-- OPPGAVE 5: Se på eksempelet ovenfor, og legg til informasjonen om en film på samme måte. -->
+                    </tr>
+                </>
+
+                        <!--TEORI: Tabell med serier. <dl> definerer en liste med beskrivelser.-->
+                <table id="serier">
+                    <h2>Serier</h2>
+                
+                    <!-- OPPGAVE 6: Legg til inventinganna.jpg i src (som du finner i bilder-mappen).
+                    Sett bredden til 250 og høyden 160 på bildet. Legg deretter til to filmer til med tittel, antall sesonger 
+                    og bilde. Du kan bruke bildene i bilde-mappen eller velge egne bilder. Disse må isåfall lastes opp på samme sted. -->
+                    <dl>
+                        <dt>Inventing Anna</dt> <!--Listeelement som skal beskrives-->
+                        <dd>1 sesong</dd> <!--Beskrivelse av listeelementet-->
+                        <img src="bilder/" alt="Inventing Anna">
+
+
+
+
+                    </dl>
+                </table>
+
+
+                <!-- OPPGAVE 7: Bruk den semantiske taggen <iframe>, og legg til denne filmtraileren: https://www.youtube.com/embed/Y9dr2zw-TXQ
+                    Sett bredden til 420 og høyde på 345 på videoen. Hint: https://www.w3schools.com/tags/tag_iframe.asp -->
+
+                <!-- OPPGAVE 8: Lag et paragraf nedenfor med teksten: "Legg til filmer her." -->
+
+                <!-- OPPGAVE 9: Lag ferdig skjemaet for å kunne registrere filmer med tittel og sjanger. 
+                Hint: https://www.w3schools.com/html/html_forms.asp -->
+                <form>
+                    <input type="submit">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

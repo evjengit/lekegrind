@@ -1,0 +1,36 @@
+/* Her trenger du ikke å endre på noe */
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+}
+
+header{
+    text-align: center;
+
+.filmer{
+    order: 1;
+}
+
+table tr, th{
+    border: 1px solid;
+    font-weight: normal;
+}
+
+iframe{
+    margin: auto;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+table dt{
+    font-weight: bold;
+}
