@@ -1,0 +1,108 @@
+/* 
+TEORI:
+CSS bruker følgende formatering: 
+selector {
+  property: value;
+}
+*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* 
+OPPGAVE 1: 
+Velg riktig selector nedenfor for å gjøre alle paragrafene grønne. 
+*/
+{
+  color: green;
+}
+
+/* 
+OPPGAVE 2: 
+Det er mulig å velge alle av en viss type selector, innenfor en annen type selector. 
+Legg til li selectoren på riktig plass, og prøv å endre til en valgfri tekststørrelse. 
+*/
+ul {
+  font-size: ;
+}
+
+/* 
+TEORI: 
+Det er også mulig å gi spesifikke tagger den samme stilen.
+Dette gjøres ved hjelp av klasser. En klasse defineres med et punktum og et navn.
+Man må også legge til attributten class="" på HTML-taggene.
+
+OPPGAVE 3: 
+I index.html ligger det en klasse som heter "align-right".
+Finn ut hvilken property og value du trenger for å legge teksten mot høyre.
+Følg linken for tips: https://www.w3schools.com/cssref/pr_text_text-align.ASP 
+*/
+.align-right {
+
+}
+
+/* 
+OPPGAVE 4:
+En HTML-tagg kan ha flere klasser. 
+Legg til klassen nedenfor på samme tagg som klassen "align-right" i index.html.
+Gjør tekstfargen blå. 
+*/
+.colorblue {
+  
+}
+
+/* 
+OPPGAVE 5:
+En ID selector blir brukt for å stilsette en unik tagg.
+Lag en ID selector nedenfor, og endre fontstørrelsen til 50px, tekstfargen til grønn og sentrer teksten.
+Husk å legge til id="" på H1-taggen i index.html.
+*/
+# {
+
+}
+
+/* 
+TEORI:
+I CSS brukes det som kalles for boksmodellen (box model).
+Rundt hvert HTML element er det en rektangulær boks.
+Boksen definerer hvor mye plass et element skal ta på en side.
+Boksen består av 4 deler: innhold, padding, border og margin.
+https://www.w3schools.com/css/css_boxmodel.asp 
+
+OPPGAVE 6:
+Det ligger en <div> rundt <h3> og <p> i index.html, legg til klassenavnet nedenfor.
+Lag en solid 5px border, og gjør boksen 250px bred.
+Legg til valgri padding og margin. Teksten i boksen skal være sentrert.
+*/
+.boxmodel {
+}
+
+/* 
+OPPGAVE 7:
+Lag en klasse i <div> rundt paragraf 2 i index.html.
+Sett en valgfri bakgrunnsfarge og en stiplet rød border.
+Finn riktig border ved å følge linken: https://www.w3schools.com/css/css_border.asp 
+Boksen skal være sentrert på nettsiden, men innholdet skal ligge til venstre.
+Bruk margin for å lage et mellomrom til paragraf 1.
+Legg til padding for å skape avstand mellom teksten og border. 
+*/
+{
+
+}
+
+/*
+OPPGAVE 8: 
+Endre bredden på klassen ovenfor til 500px.
+*/
+
+/* 
+OPPGAVE 9:
+Endre tekstfargen til svart, og en valgfri tekststørrelse. 
+Endre font til en serif font (for eksempel Times New Roman eller Georgia).
+*/
+.p2style {
+  
+}
