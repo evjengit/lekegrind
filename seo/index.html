@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+    <head>
+    <!-- TEORI: For å optimalisere nettsiden for deling i sosiale medier på facebook, må du bruke formatet Open Graph: https://ogp.me/ 
+        OPPGAVE 1: Legg til metatagger som passer til denne nettsiden fra Open Graph og legg de til her i <head>. -->
+        <title>Publisering oppgave 1</title>
+        <meta charset="UTF-8" />
+        <!-- OPPGAVE 3: Legg til søkeord som kan øke trafikken til nettstedet. Hint: https://www.w3schools.com/tags/tag_meta.asp. -->
+        <meta name="keywords" content="">
+        <!-- OPPGAVE 4: Gi nettsiden en innholdsbeskrivelse under. Hint: https://www.w3schools.com/tags/tag_meta.asp -->
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+   
+    <body>
+    <div id="wrapper"> 
+    <header>
+        <h1>Verdens beste pannekaker</h1>
+        <p>2 porsjoner</p>
+    </header> 
+    <!-- OPPGAVE 5: Legg til de semantiske taggene <main> og <article> på de to <div>-taggene under. -->
+
+    <!-- TEORI: Microdata lar oss markere innholdstype og hvilken betydning ulike deler av innholdet har.
+        OPPGAVE 6: Legg til attributten itemscope="itemscope" i <main>. Hint: https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata -->
+
+    <!-- OPPGAVE 7: Gå til https://schema.org/, søk og gå inn på Recipe. Legg til itemtype="urlDUfant" i <main> bak itemscope="itemscope". -->      
+    <div>
+        <div>
+    <!-- OPPGAVE 8: Finn typene på schema.org/Recipe som passer til innholdet og bytt ut alle # i de tre itemprop attributtene.-->
+         <h1>Ingredienser</h1>
+          <p itemprop="#">2 dl hvetemel <br/> 1 krm salt <br/> 3 dl lettmelk <br/> 2 egg <br/> 1 ss myk margarin</p>
+          <h1>Fremgangsmåte</h1>
+          <p itemprop="#"> 1. Ha mel og salt i en bolle. Spe med melk. Visp til røren er glatt. <br/> 2. Visp inn eggene og la røren svelle i 20 minutter.<br/> 3. Stek pannekakene i litt margarin på middels varme.</p> 
+        </div>
+        <img id="bilde" src="pannekaker.jpg" alt="pannekaker" itemprop="#" />   
+    </div>
+    </div>   
+
+    </Body>
+</html>
