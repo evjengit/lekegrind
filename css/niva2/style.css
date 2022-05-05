@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* 
+TEORI:
+CSS Grid gjør det lettere å designe nettsider todimensjonalt. 
+Et grid består av en container (parent) med items (child). 
+
+OPPGAVE 1:
+Finn grid-container (parent) og taggene (child) i index.html.
+Fyll inn child-taggene i grid-template-areas nedenfor.
+Følg linken for å se hvordan: 
+https://www.w3schools.com/cssref/pr_grid-template-areas.asp
+*/
+#grid_container { 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: ;
+}
+
+/* 
+OPPGAVE 2:
+Legg til et bakgrunnsbilde i headeren.
+Bildet finner du i mappen bilder. 
+Prøv å få bildet til å dekke hele headeren. Hint: https://www.w3schools.com/cssref/css3_pr_background-size.asp 
+*/ 
+header { 
+    grid-area: header;
+    background-image: url("");
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    background: rgba(204, 204, 204, 0.7);
+    width: 300px;
+    padding: 20px;
+}
+
+/* 
+TEORI:
+Innenfor CSS bruker man position-property for å posisjonere elementer. 
+Det er fem verdier: static, relative, fixed, absolute og sticky.
+
+OPPGAVE 3:
+Finn riktig property og value for å plassere <nav> i <header>.
+*/
+nav { 
+    grid-area: nav;
+    top: 230px;
+    left: 550px;
+}
+
+ul {
+    display: inline-flex;
+    background: rgba(204, 204, 204, 0.7);
+    height: 40px;
+    width: 270px;
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.navtext {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 
+TEORI:
+Flexbox er en mer fleksibel layout enn Grid, men man trenger også her en parent-container.
+
+OPPGAVE 4:
+Få artiklene i "flex_container" til å flyte nedover.
+Hint: https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp
+*/
+#flex_container { 
+    grid-area: main;
+    display: flex;
+}
+
+article {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: lightgray;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+section {
+    padding: 5px;
+}
+
+@keyframes animationbackground {
+    from {background-color: lightgray;}
+    to {background-color: yellow;}
+}
+
+/*
+OPPGAVE 5: 
+Koble footer til animasjonskoden ovenfor gjennom animation-name. Hint: https://www.w3schools.com/cssref/css3_pr_animation.asp
+*/
+footer {
+    grid-area: footer;
+    background-color: lightgray;
+    margin: 5px;
+    animation-duration: 10s;
+}
+
+/* 
+TEORI:
+Å gjøre nettsider responsive på alle enheter er viktig for universell utforming. Man starter gjerne
+med mobilskjermen først og bygger seg oppover. Nedenfor setter vi et breakpoint på maks bredde 768px,
+dette tar for seg mobilenhetene.
+
+OPPGAVE 6:
+Endre posisjonen slik at navigasjonsbaren kommer under headeren.
+*/
+@media only screen and (max-width: 768px) { 
+    nav {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+/*
+TEORI:
+Nedenfor har vi et breakpoint på maks bredde 1410px og minimum bredde 768px. Dette tar for seg
+enhetene som er større enn en mobilskjerm og opp til en dataskjerm. 
+
+OPPGAVE 7:
+Velg riktig piksel for å gjøre navigasjonen responsiv. Hint: <1
+*/
+@media only screen and (max-width: 1410px) and (min-width: 768px) {
+    nav {
+        top: px;
+        left: px;
+        position: relative;
+    }
+}
+
+/* 
+OPPGAVE 8:
+For å gjøre nettsiden responsiv må man legge til en meta-tagg i index.html. Hint: https://www.w3schools.com/css/css_rwd_viewport.asp 
+Gå til index.html.
+*/
