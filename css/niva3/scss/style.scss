@@ -1,0 +1,95 @@
+/* 
+TEORI:
+SASS står for Syntactically Awesome Stylesheet.
+
+Med SASS kan man bruke variabler.
+En variabel i Sass ser slik ut:
+
+$variabelnavn: verdi;
+
+Fordelen med dette er at man kan legge inn
+variabelnavnet som en verdi flere steder,
+men bare trenger å tenke på å endre verdien ett sted.
+
+https://www.w3schools.com/sass/sass_intro.php
+*/
+
+// OPPGAVE 1: Lag en variabel med fargen grønn.
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.globalmargin {
+  margin: 0px 30px 0px 10px;
+}
+
+/* 
+OPPGAVE 2: Bruk variabelen for grønnfargen du lagde tidligere
+som verdi i property color 
+*/
+p {
+}
+// TEORI: SASS lar deg bruke nesting av CSS selectors på en måte som
+// følger det samme visuelle hierarkiet som HTML.
+
+// OPPGAVE 3: Legg til en <p> tag innenfor <ul> med tekststørrelse 25px.
+// OPPGAVE 4: Lag en variabel for tekststørrelsen.
+ul {
+  li {
+    font-size: 20px;
+  }
+}
+
+/* 
+TEORI: Akkurat som i CSS har vi mulighet for å importere andre CSS filer via @import.
+I Sass har vi også mulighet til å bruke noe som heter partials.
+Hvis man lager en fil med et navn som starter med understrek, for eksempel
+"_farger.scss" er dette å regne som en partial.
+https://www.w3schools.com/sass/sass_import.php
+
+OPPGAVE 5: Importer _farger.scss
+
+
+OPPGAVE 6: Se i _farger.scss
+*/
+
+// OPPGAVE 7: Erstatt fargene i klassene og IDen under med variabler fra _farger.scss.
+// Legg til flere variabler om det mangler.
+.paragraftre {
+  text-align: right;
+}
+
+#hovedoverskrift {
+  text-align: center;
+  font-size: 50px;
+}
+
+.boxmodel {
+  width: 250px;
+  border: 5px solid;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+.paragraf2box {
+  width: 500px;
+  border: 1px dashed red;
+  background-color: yellow;
+  color: black;
+  padding: 10px;
+  margin: 75px auto auto auto;
+}
+
+// OPPGAVE 8: I klassen "p2style" nedenfor bruk selector nesting for å gjøre font-familien til en serif,
+// font størrelsen til 20px og font-vektingen til bold.
+// Hint: https://www.w3schools.com/sass/sass_nesting.php
+
+.p2style {
+  color: black;
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: lighter;
+}
