@@ -1,0 +1,85 @@
+<!--Info: Tallene under viser til kravene under forskriften om universell utforming av ikt-løsninger.-->
+
+<!DOCTYPE html>
+<!-- TEORI: 3.1.1 Språk på siden (Nivå A)-Sørg for at språket til innholdet på alle nettsider er angitt i koden-->
+<!-- OPPGAVE 1: Legg til hovedspråk på nettstedet ved å bruke attributten lang. Hint: https://www.uutilsynet.no/veiledning/sprak-i-koden/223-->
+<html>
+    <head>
+<!-- TEORI: 2.4.2 Sidetitler(Nivå A) - Bruk nyttige og tydelige sidetitler-->        
+<!-- OPPGAVE 2: Legg til en beskrivende sidetittel i <title> -->
+        <title>Et nettsted</title>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="grid_container">
+<!-- TEORI: 2.1.1 Tastatur (Nivå A)-All funksjonalitet skal kunne brukes kun ved hjelp av tastatur. -->            
+<!-- OPPGAVE 3: Gjør så man kan tabbe gjennom alle elementene på siden ved å benytte tabindex,HINT: https://www.uutilsynet.no/veiledning/tastaturnavigasjon/37 -->   
+            <header>
+                <h1 class="overskrift1">KNÈIPP</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a class="navtext" href=#>Pannekaker</a></li>
+                    <li><a class="navtext" href=#>Hamburger</a></li>
+                    <li><a class="navtext" href=#>Pizza</a></li>
+                </ul>
+            </nav>
+<!-- TEORI: 3.1.2 Språk på deler av innhold (Nivå AA)- Sørg for at deler av innholdet som er på et annet språk enn resten av siden er markert i koden.-->
+<!-- OPPGAVE 4: Legg til attributtet lang="(?)" på <p> i teksten der det er språkendringer. Hint: https://www.uutilsynet.no/veiledning/sprak-i-koden/223 -->            
+            <main id="flex_container">
+<!-- TEORI: 1.1.1 Ikke-tekstlig innhold(Nivå A)- Gi brukeren et tekstalternativ for innholdet som ikke er tekst. -->         
+<!-- OPPGAVE 5: Legge til alt-attributten på bildene og en beskrivede bilde tekst. -->
+                <article>
+                    <a class="art" href="#">
+                    <h1>Pannekaker</h1>
+                    <img src="bilder/pannekaker.jpg"/>
+                    <p>Keep calm and eat pancakes.</p>
+                    <p>Se oppskrifter her.</p>
+                    </a>
+                </article>
+                <article>
+                    <a class="art" href="#">
+                    <h1>Hamburger</h1>
+                    <img src="bilder/hamburger.jpg"/>
+                    <p>The only bad burger is the one you didn't eat.</p>
+                    <p>Se oppskrifter her.</p>
+                    </a>
+                </article>
+                <article>
+                    <a class="art" href="#">
+                    <h1>Pizza</h1>
+                    <img src="bilder/pizza.jpg"/>
+                    <p>You can't make everyone happy. You're not pizza.</p>
+                    <p>Se oppskrifter her</p>
+                    </a>
+                </article>
+                <article class="info">
+                    <h1>Kneipp</h1>
+                    <p>Norge er det landet i verden som spiser mest brød. Kneippbrødet er det desidert mest bakte brødet. Da kneippbrødet kom til Norge på slutten av 1800-tallet ble det raskt en av de sentrale elementene i oslofrokosten, opphavet til den norske matpakkekulturen, som ble servert alle skolebarn i Oslo-området fra 1935.</p>
+                    <p>I dagens samfunn elsker nordmenn fortsatt kneipp. Alle som vokser opp i Norge har et forhold til brødskive med pålegg. Kneippbrød med makrell i tomat er en hverdagsklassiker. Det ikke alle vet, er at da kneippbrødet ble funnet opp av den tyske presten og professoren Dr.Kneipp, markedsførte han brødet ved at det kunne hjelpe til med å forhindre at befolkningen onanerte.</p>      
+                </article>   
+             </main>
+
+             <aside>
+                <article class="nummertliste">
+                    <h1>Våre mest besøkte oppskrifter</h1>
+<!-- TEORI: 1.3.2 Meningsfylt rekkefølge (Nivå A)- Brukere skal ha flere ulike innganger til innholdet på nettstdet. -->
+<!-- OPPGAVE 6: Legg til at listen under blir en nummert liste. HINT: https://www.w3schools.com/tags/tag_ol.asp --> 
+<!-- OPPGAVE 7: Gjør teksten om til stikkord så innholdet samsvarer mest mulig med med teksten i navigasjon.-->       
+                    <ul>
+                        <li class="liste"><a href="#">Jeg inneholder egg, mel, melk og smør. Hva er jeg?</a></li>
+                        <li class="liste"><a href="#">Jeg er fra Italia</a></li>
+                        <li class="liste"><a href="#">Jeg kan lages av nesten alt, så lenge du former meg som en hockypuck.</a></li>
+                    </ul>
+                </article>
+             </aside>
+
+             <footer>
+                 <p>Les gjerne mer om universell utforming <a href="https://www.uutilsynet.no/">her.</a></p>
+             </footer>  
+        </div>
+    </body>
+</html>
+<!-- Gå til style.css for resten av OPPGAVENE-->  

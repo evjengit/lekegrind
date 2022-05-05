@@ -1,0 +1,154 @@
+/* TEORI: 1.4.3 Kontrast(minimum, Nivå AA) - Les mer: https://www.uutilsynet.no/wcag-standarden/143-kontrast-minimum-niva-aa/95 */
+/* OPPGAVE 8: Bytt fargene i CSS-stilarket, til å møte kontrastkravet.
+              Sjekk med: https://www.tpgi.com/color-contrast-checker/   
+              Fargene som er benyttet på illustrasjons bilde er:
+              #ffffff
+              #efd9d1
+              #ddb7ab */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    /*endres*/background-color: yellow;
+    margin: auto;
+}
+
+#grid_container { 
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: "header" "nav" " main" "aside" "footer";
+}
+
+header { 
+    grid-area: header;
+    /*endres*/background-color: rgb(255, 255, 144);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.overskrift1 {
+    width: 300px;
+    padding: 20px;
+}
+
+nav { 
+    grid-area: nav;
+    top: 230px;
+    left: 550px;
+    border-style: solid;
+    /*endres*/border-color: rgb(255, 255, 144);   
+}
+
+ul {
+    display: inline-flex;   
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;       
+}
+
+/* TEORI: 2.4.4 Formål med lenke (i kontekst, Nivå A)- Alle lenkers mål og funksjon fremgår tydelig av lenketeksten.*/
+/*OPPGAVE 9: Legg til underline i .navtext og få den til å bli borte når man hoverer. Hint: https://www.w3schools.com/cssref/pr_text_text-decoration.asp */
+.navtext {
+    color: black;
+    font-weight: bold;
+    display: block;
+    padding: 30px;
+    border-radius: 10px;    
+}
+
+.navtext:hover {
+    /*endres*/color:yellow;
+    /*endres*/background-color:rgb(255, 255, 77);   
+}
+
+#flex_container { 
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1700px;
+    margin: auto;
+}
+
+article{
+    width: 400px;
+    height: 420px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    justify-items: center;
+}
+
+.art {
+    border-style: solid;
+    /*endres*/border-color: rgb(255, 255, 144);
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 20px;
+    border-radius: 10px;   
+}
+
+/* TEORI : 1.4.1 Bruk av farge (Nivå A)- Ikke bruk presentasjon som bygger utelukkende på farge. */
+/* OPPGAVE 10: Legg til underline ved hovering til linken under. Hint: https://www.w3schools.com/cssref/pr_text_text-decoration.asp */
+.art:hover {
+    /*endres*/background-color: rgb(255, 255, 77);
+    border-radius: 10px;
+}
+
+.info {
+    border-style: none;
+    text-align: left;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+aside{
+    grid-area: aside;
+    /*endres*/background-color: rgb(255, 255, 144);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.nummertliste {
+    border-style: none;
+    text-align: left; 
+}
+
+.liste {
+    list-style-type: decimal; 
+}
+
+footer {
+    grid-area: footer;
+    width: 470px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    #flex_container {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #flex_container {
+        flex-wrap: wrap;
+    }
+}
+
+
+
