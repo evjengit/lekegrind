@@ -1,0 +1,203 @@
+/*
+OPPGAVE 1:
+Importer variablene fra _farger.scss
+*/
+
+body {
+  font-family: sans-serif;
+  margin: auto;
+  max-width: 1500px;
+}
+
+/*
+OPPGAVE 2:
+Header skal ha et bakgrunnsbilde. 
+Bakgrunnsbildet som skal benyttes finner du i mappen bilder, og heter header.jpg.
+Bakgrunnsbildet skal "sitte fast" når man scroller ned. 
+Hint: https://www.w3schools.com/cssref/pr_background-attachment.asp
+*/
+header {
+  background-size: 100% auto; 
+  background-repeat: no-repeat;
+  padding: 50px; 
+
+/*
+OPPGAVE 3:
+Overskriften på h1 skal ha en animasjon med pulserende effekt, dette bestemmes i @keyframes lenger ned.
+Animasjonen skal vare i 4 seksunder.
+*/
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 65px;
+    color: $dark-green;
+    animation-timing-function: ease-out;
+  }
+}
+
+/*
+OPPGAVE 4:
+Her bestemmes animasjonens transformasjon. På 0% og 100% skal scale være i orginal størrelse.
+*/
+@keyframes headerAnimation {
+  25%  {transform: scale(0.80);}
+  50%  {transform: scale(1);}
+  75% {transform: scale(0.80);}
+}
+
+.navwrapper {
+  grid-area: nav;
+  background-color: $dark-green;
+  text-align: center;
+}
+
+/*
+OPPGAVE 5:
+Navigasjonslinkene skal ha bold tekst når de blir hovret over. 
+*/
+nav {
+  li {
+  display: inline-block;
+  font-size: 15px;
+    
+    a {
+    padding: 20px;
+    text-decoration: none;
+    color: $white;
+    text-transform: uppercase;
+    }
+  }
+}
+
+aside {
+  text-align: center;
+  padding: 25px;
+}
+
+/*
+OPPGAVE 6:
+Div-klassen som wrapper hele bodyen skal være Grid.
+*/
+.wrapper {
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer";
+}
+
+.headerwrapper {
+  grid-area: header;
+}
+
+.asidewrapper {
+  grid-area: aside;
+  background-color: $light-grey;
+}
+
+.mainwrapper {
+  grid-area: main;
+  background-color: $light-grey;
+  padding: 20px;
+}
+
+/*
+OPPGAVE 7:
+Div-klassen som wrapper Main skal være Flexbox.
+*/
+.nested {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-evenly;
+}
+
+/*
+OPPGAVE 8:
+Hver article skal ha et bakgrunnsbilde. Bildet heter box.jpeg og i bilder-mappen.
+*/
+article {
+  background-size: 100%;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  color: $white;
+  padding: 10px;
+  box-shadow: 10px 10px 5px $grey;
+}
+
+section {
+  padding-bottom: 30px;
+}
+
+.knapper {
+  border: 1px solid $white;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: $white;
+  font-weight: bold;
+  box-shadow: 5px 5px 5px $white;
+}
+
+.footerwrapper {
+  grid-area: footer;
+  background-color: $dark-green;
+  text-align: center;
+  color: $white;
+}
+
+address {
+  a {
+  color: $white;
+  }
+}
+
+/*
+OPPGAVE 9
+Lag nettsiden responsiv for mobile enheter
+*/
+@media only screen and (max-width:) {
+  .wrapper {
+  }
+
+  .nested {
+  }
+
+  header {
+    h1 {
+    }
+  }
+
+  nav {
+    li {
+    }
+  }
+}
+
+/*
+OPPGAVE 10
+Lag nettsiden responsiv for nettbrett o.l
+*/
+@media only screen and (min-width: ) and (max-width: ) {
+  .wrapper {
+  }
+
+  nav {
+    li {
+      a {
+      }
+    }
+  }
+
+  header {
+    h1 {
+    }
+  }
+
+  article {
+  }
+}
+
+/*
+Gå til filen print.css for neste oppgave
+*/
