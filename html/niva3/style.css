@@ -1,0 +1,29 @@
+/* Hvis du har vært gjennom CSS-nivåene, prøv deg frem og design nettstedet slik du ønsker. */
+
+body {
+    max-width: 1500px;
+    margin: auto;
+}
+
+li {
+    padding: 10px;
+}
+
+.navtext {
+    color: black;
+}
+
+table, tr, th, td {
+    border: 0.5px solid black;
+}
+
+input {
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.imagerunning {
+    width: 600px;
+    height: 400px;
+}
