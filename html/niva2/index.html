@@ -1,77 +1,89 @@
 <!DOCTYPE html>
 <html lang="nb">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <title>HTML Nivå 2</title>
-    </head>
-    <body>
-        <!-- OPPGAVE 1: Lag en overskrift med tittelen "Mitt filmarkiv- og seriearkiv" inne i <header>-taggen. -->
-        <header>
 
-        </header>
-        <!-- TEORI: Semantiske tagger er beskrivende tagger som gjør innholdet mer forståelig, som for eksempel main.
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>HTML Nivå 2</title>
+</head>
+
+<body>
+    <!-- OPPGAVE 1: Lag en overskrift med tittelen "Mitt filmarkiv- og seriearkiv" inne i <header>-taggen. -->
+    <header>
+        <h1>Mitt filmarkiv- og seriearkiv</h1>
+    </header>
+    <!-- TEORI: Semantiske tagger er beskrivende tagger som gjør innholdet mer forståelig, som for eksempel main.
         Det kan kun være en main i dokumentet og alt hovedinnhold skal ligge inne i main. 
         Det som kan ligge utenfor er for eksempel <header>, <footer> eller <aside>. -->
-        <main>
-            <div id="filmer">
-                <h2>Filmer</h2>
+    <main>
+        <div id="filmer">
+            <h2>Filmer</h2>
 
-                <!-- OPPGAVE 2: List opp noen filmer i en <ul>. Hint: https://www.w3schools.com/html/html_lists.asp -->
-                <ul>
-                </ul>
+            <!-- OPPGAVE 2: List opp noen filmer i en <ul>. Hint: https://www.w3schools.com/html/html_lists.asp -->
+            <ul>
+                <li>Batman</li>
+                <li>Ironman</li>
+                <li>Superman</li>
+                <li>Spider-man</li>
+            </ul>
 
-                <!-- OPPGAVE 3: Fyll ut de tomme taggene utenfor <tr> for å lage en tabell. -->
-                <>
-                    <tr>
-                        <!-- TEORI: Den første raden i en tabell inneholder table headers for å gi kolonnene overskrifter. 
+            <!-- OPPGAVE 3: Fyll ut de tomme taggene utenfor <tr> for å lage en tabell. -->
+            <table>
+                <tr>
+                    <!-- TEORI: Den første raden i en tabell inneholder table headers for å gi kolonnene overskrifter. 
                             OPPGAVE 4: Legg til to overskrifter, for "sjanger" og "utgivelsesår". -->
-                        <th>Filmtittel</th>
-
-
-                    </tr>
-                    <tr>
-                        <!-- TEORI: <td> blir brukt for å beskrive cellene i tabellen. Hver celle er knyttet til
+                    <th>Filmtittel</th>
+                    <th>Sjanger</th>
+                    <th>utgivelsesår</th>
+                </tr>
+                <tr>
+                    <!-- TEORI: <td> blir brukt for å beskrive cellene i tabellen. Hver celle er knyttet til
                             table header i samme kolonne. -->
-                        <td>Verdens verste menneske</td>
-                        <td>Romantikk/Drama</td>
-                        <td>2021</td>
-                    </tr>
-                    <tr>
-                        <!-- OPPGAVE 5: Se på eksempelet ovenfor, og legg til informasjonen om en film på samme måte. -->
-                    </tr>
-                </>
+                    <td>Verdens verste menneske</td>
+                    <td>Romantikk/Drama</td>
+                    <td>2021</td>
+                </tr>
+                <tr>
+                    <td>Ironman</td>
+                    <td>Action/Sci-fi</td>
+                    <td>2010</td>
+                    <!-- OPPGAVE 5: Se på eksempelet ovenfor, og legg til informasjonen om en film på samme måte. -->
+                </tr>
+            </table>
+            <!--TEORI: Tabell med serier. <dl> definerer en liste med beskrivelser.-->
+            <h2>Serier</h2>
+            <table id="serier">
 
-                        <!--TEORI: Tabell med serier. <dl> definerer en liste med beskrivelser.-->
-                <h2>Serier</h2>
-                <table id="serier">
-                
-                    <!-- OPPGAVE 6: Legg til inventinganna.jpg i src (som du finner i bilder-mappen).
+                <!-- OPPGAVE 6: Legg til inventinganna.jpg i src (som du finner i bilder-mappen).
                     Sett bredden til 250 og høyden 160 på bildet. Legg deretter til to filmer til med tittel, antall sesonger 
                     og bilde. Du kan bruke bildene i bilde-mappen eller velge egne bilder. Disse må isåfall lastes opp på samme sted. -->
-                    <dl>
-                        <dt>Inventing Anna</dt> <!--Listeelement som skal beskrives-->
-                        <dd>1 sesong</dd> <!--Beskrivelse av listeelementet-->
-                        <img src="bilder/" alt="Inventing Anna">
-
-
-
-
-                    </dl>
-                </table>
-
-
+                <dl>
+                    <dt>Inventing Anna</dt>
+                    <!--Listeelement som skal beskrives-->
+                    <dd>1 sesong</dd>
+                    <!--Beskrivelse av listeelementet-->
+                    <img src="bilder/inventinganna.jpg" alt="Inventing Anna" width="250" height="160">
+                </dl>
+            </table>
+            <p>Legg til filmer her.</p>
+            <!-- OPPGAVE 9: Lag ferdig skjemaet for å kunne registrere filmer med tittel og sjanger. 
+            Hint: https://www.w3schools.com/html/html_forms.asp -->
+            <form>
+                <label for="film">Film:</label><br>
+                <input type="text" id="film" name="film" value=""><br>
+                <label for="sjanger">Sjanger:</label><br>
+                <input type="text" id="sjanger" name="sjanger" value=""></br>
+                <label for="utgivelsesår">Utgivelsesår:</label><br>
+                <input type="text" id="utgivelsesår" name="utgivelsesår" value=""></br>
+                <input type="submit">
+            </form>
+            <iframe src="https://www.youtube.com/embed/Y9dr2zw-TXQ" title="trailer" width="420" height="345" </iframe>
                 <!-- OPPGAVE 7: Bruk den semantiske taggen <iframe>, og legg til denne filmtraileren: https://www.youtube.com/embed/Y9dr2zw-TXQ
                     Sett bredden til 420 og høyde på 345 på videoen. Hint: https://www.w3schools.com/tags/tag_iframe.asp -->
 
                 <!-- OPPGAVE 8: Lag et paragraf nedenfor med teksten: "Legg til filmer her." -->
+        </div>
+    </main>
+</body>
 
-                <!-- OPPGAVE 9: Lag ferdig skjemaet for å kunne registrere filmer med tittel og sjanger. 
-                Hint: https://www.w3schools.com/html/html_forms.asp -->
-                <form>
-                    <input type="submit">
-                </form>
-            </div>
-        </main>
-    </body>
 </html>
