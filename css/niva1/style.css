@@ -16,7 +16,7 @@ body {
 OPPGAVE 1: 
 Velg riktig selector nedenfor for å gjøre alle paragrafene grønne. 
 */
-{
+p{
   color: green;
 }
 
@@ -25,8 +25,8 @@ OPPGAVE 2:
 Det er mulig å velge alle av en viss type selector, innenfor en annen type selector. 
 Legg til li selectoren på riktig plass, og prøv å endre til en valgfri tekststørrelse. 
 */
-ul {
-  font-size: ;
+ul li{
+  font-size: 1rem;
 }
 
 /* 
@@ -41,7 +41,7 @@ Finn ut hvilken property og value du trenger for å legge teksten mot høyre.
 Følg linken for tips: https://www.w3schools.com/cssref/pr_text_text-align.ASP 
 */
 .align-right {
-
+  text-align: right;
 }
 
 /* 
@@ -51,6 +51,7 @@ Legg til klassen nedenfor på samme tagg som klassen "align-right" i index.html.
 Gjør tekstfargen blå. 
 */
 .colorblue {
+  color: blue;
   
 }
 
@@ -60,7 +61,10 @@ En ID selector blir brukt for å stilsette en unik tagg.
 Lag en ID selector nedenfor, og endre fontstørrelsen til 50px, tekstfargen til grønn og sentrer teksten.
 Husk å legge til id="" på H1-taggen i index.html.
 */
-# {
+#hovedoverskrift {
+  color: green;
+  font-size: 50px;
+  text-align: center;
 
 }
 
@@ -78,6 +82,10 @@ Lag en solid 5px border, og gjør boksen 250px bred.
 Legg til valgri padding og margin. Teksten i boksen skal være sentrert.
 */
 .boxmodel {
+  border: 5px solid;
+  width: 250px;
+  padding: 1rem;
+  margin: 2rem;
 }
 
 /* 
@@ -89,7 +97,13 @@ Boksen skal være sentrert på nettsiden, men innholdet skal ligge til venstre.
 Bruk margin for å lage et mellomrom til paragraf 1.
 Legg til padding for å skape avstand mellom teksten og border. 
 */
-{
+.para2{
+  background-color: rgb(170, 255, 255);
+  border: 2px dotted red;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: left;
+  width:500px;
 
 }
 
@@ -104,5 +118,8 @@ Endre tekstfargen til svart, og en valgfri tekststørrelse.
 Endre font til en serif font (for eksempel Times New Roman eller Georgia).
 */
 .p2style {
+  color: black;
+  font-size: 1rem;
+  font-family: Georgia, serif;
   
 }

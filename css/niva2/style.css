@@ -21,7 +21,7 @@ https://www.w3schools.com/cssref/pr_grid-template-areas.asp
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
     grid-gap: 10px;
-    grid-template-areas: ;
+    grid-template-areas: "header nav main aside footer";
 }
 
 /* 
@@ -32,8 +32,9 @@ Prøv å få bildet til å dekke hele headeren. Hint: https://www.w3schools.com/
 */ 
 header { 
     grid-area: header;
-    background-image: url("");
-    height: 300px;
+    background-image: url("bilder/books.jpg");
+    background-size: cover;
+    /*height: 300px;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,6 +56,7 @@ Finn riktig property og value for å plassere <nav> i <header>.
 */
 nav { 
     grid-area: nav;
+    position: relative;
     top: 230px;
     left: 550px;
 }
@@ -121,6 +123,7 @@ footer {
     grid-area: footer;
     background-color: lightgray;
     margin: 5px;
+    animation-name: animationbackground;
     animation-duration: 10s;
 }
 
